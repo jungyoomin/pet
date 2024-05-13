@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 정유민</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+   
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./mini-css/main.css">
+<link rel="stylesheet" href="./mini-css/footer.css">
+<link rel="stylesheet" href="./mini-css/header.css">
+<link rel="stylesheet" href="./mini-css/adopt.css">
+<body>
+    <header>
+        <div id="mainTitle">
+            <div id="titleIn">
+                <span id="homeS">home</span>
+                <span id="inS">| 회원가입 |</span>
+                <span id="logS"> 로그인 |</span>
+            </div>
+            <div id="titleText">
+                <h1>Momentum</h1> 
+                
+                <nav style=" display: inline-block;">
+                    <a href="http://192.168.0.63:5500/0502-mini/main.html">
+                        <img src="./pick/whiteMomentum.png" width="150" height="150" id="headImg">
+                    </a>
+                </nav>
+                <h3>{ 유기견 입양센터 }</h3>
+                
+            </div>
+            
+        </div>
+        <div id="menu">
+            <table>
+                <tr>
+                    <td id="firstMenu">
+                        | 소개 |
+                    </td>
+                    <td id="secondMenu">
+                        애완동물이해하기 |
+                    </td>
+                    <td id="thirdMenu">
+                        반려견보기 |
+                    </td>
+                    <td id="fourthMenu">
+                        입양신청 |
+                    </td>
+                    <td id="fifthMenu">
+                        관심반려견 |
+                    </td>
+                    <td id="sixthMenu">
+                        반려견 검색 |
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    
+    <div id="adoptZone">
+        <div id="adoptDiv">
+            <div id="adoptLeft">
+                <img src="./pick/adoptPick/leftLine.png" class="adopt_left" height="730px">
+                <br><br>
+            </div>
+            <div id="adoptCenter">
+                <strong>{ 입양 신청 약관 동의서 }</strong><br>
+
+                <p style="float:left" > <strong>입양 약관 :</strong></p>
+                
+                <p style="text-align: left;margin-left: 80px;">&nbsp;사용자는 입양 신청을 제출할 때 <strong style="color:blue">모든 필수 정보를 제공</strong>해야 하며, <strong style="color: blue;">모든 약관에 동의한 후 진행</strong>할 수 있습니다.<br>
+                <small style="float: right;">(입양 신청은 심사를 거친 후 승인될 수 있습니다)</small><br>
+                    <strong style="color: blue;">1. 입양 수수료 및 조건</strong><br>
+                    &nbsp;&nbsp;<strong>입양 수수료가 존재</strong>합니다. 입양 수수료는 각 동물마다 다를 수 있으며,<br>
+                    <strong>해당 금액은 입양이 완료되기 전에 지불</strong>되어야 합니다.
+                    <br>
+                    <strong style="color: blue;">2. 동물의 상태와 책임</strong><br>
+                    &nbsp;&nbsp;입양된 동물의 건강 상태는 입양 시에 명시됩니다. 그러나 이후에는 입양자의 책임으로 간주됩니다.
+                    입양자는 <br><strong>입양된 동물의 복지와 안전에 대한 책임</strong>을 져야 합니다.
+                    <br>
+                    <strong style="color: blue;">3. 반환 및 취소 정책</strong><br>
+                    &nbsp;&nbsp;입양자는 동물을 반환하기로 결정할 경우, 사이트에서 정한 절차에 따라야 합니다.
+                    일부 경우에는 <strong>반환 및 취소에 대한 조건이 적용</strong>될 수 있으며, 이는 각각의 상황에 따라 다를 수 있습니다.
+                    
+                    <br>
+                    <small>
+                        ● 개인정보 보호<br>
+                        &nbsp;사용자의 개인정보는 입양 및 관련 프로세스에만 사용되며, 제3자에게 제공되지 않습니다.
+                        사용자의 개인 정보는 개인정보 보호 정책에 따라 안전하게 보호됩니다.
+                        <br>
+                        ● 약관의 변경<br>
+                        &nbsp;본 약관은 사전 고지 없이 변경될 수 있습니다. 변경 사항은 사이트에 게시됩니다.
+                        <br>
+                        ● 문의<br>
+                        &nbsp;추가 정보나 문의사항이 있을 경우, 사이트의 최하단부에 기입된 전화번호를 통해 문의 가능합니다.
+                        
+                    </small>
+                    
+                    <br>
+                    
+                    <div>
+                        <strong>이용약관을 모두 읽었으며, 이에 동의합니다.</strong>
+                        <input type="checkbox" id="inChk" onclick="onFunction()">
+                    </div>
+                    <div >
+                        <strong> 2024년 05월 02일 목요일
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ 
+                        </strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <strong>신청자 : </strong><strong style="text-decoration: underline;">홍길동&nbsp;&nbsp;(인)</strong>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                </p>
+            </div>
+            <div id="adoptRight">
+                <img src="./pick/adoptPick/rightLine.png" class="adopt_Right" height="730px">
+                <br><br>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="adoptTextLine" >
+        <div style="width: 860px; margin-left:auto; margin-right: auto; border: 2px solid black;">
+            <div id="textCenter">
+                <strong> 입양 신청서 </strong>
+            </div>
+            <div style="text-align: right; margin-right:10px">작성일 : 2024-05-02 목요일</div>
+            <form id="adoptForm">
+                <table id="adoptTable">
+                    <tr class="adopt_trAll">
+                        <td class="firstTd">
+                            이름
+                        </td>
+                        <td class="secondTd">
+                            <input type="text" style="width: 150px;" placeholder="필수입력" onchange="onNameText()" id="onName">
+                        </td>
+                        <td rowspan="6">
+                            광고 한잔해~~
+                        </td>
+                    </tr>
+                    <tr class="adopt_trAll">
+                        <td class="firstTd">
+                            전화번호
+                        </td>
+                        <td class="secondTd">
+                            <input type="text" style="width: 300px;" placeholder="필수입력(010-0000-0000 하이픈포함)" onchange="onNumberText()" id="onNumber">
+                        </td>
+                    </tr>
+                    <tr class="adopt_trAll">
+                        <td class="firstTd">
+                            주소
+                        </td>
+                        <td class="secondTd">
+                            <input type="text" style="width: 300px;" readonly placeholder="키보드 입력 불가. 검색을 사용하십시오">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">주소 검색</button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">주소 검색</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <small>&nbsp;&nbsp;&nbsp;지역명을 입력후 검색하십시오</small>
+                                <div class="offcanvas-body">
+                                    <input type = "text" style ="width: 300px;" id="addrSearch" placeholder="지역명, 도로명주소, 우편번호로 검색가능">
+                                    <input type = "button" value="검색">
+                                    <br>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <input type="text" style="width:300px;"value="경기도 안산시 단원구 선부 2동 (425-829)">
+                                                <input type="text" style="width:300px;"value="경기도 안산시 단원구 선부 1동 (425-827)">
+                                                <input type="text" style="width:300px;"value="경기도 안산시 단원구 선부 3동 (425-143)">
+                                                <input type="text" style="width:300px;"value="경기도 안산시 단원구 고잔동 (425-809)">
+                                                <input type="text" style="width:300px;"value="경기도 안산시 단원구 와동 (425-030)">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br><br>
+                                    <input type="text" style="width: 300px;" placeholder="검색결과를 클릭하여 선택하면 입력됨">
+                                    <input type="button" value="입력저장">
+                                </div>
+                                <div class="offcanvas-foot">
+                                    
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="adopt_trAll">
+                        <td class="firstTd">
+                            상세주소
+                        </td>
+                        <td class="secondTd">
+                            <input type="text" style="width: 500px;" placeholder="~동 ~호 건물명 등의 상세주소 입력">
+                        </td>
+                    </tr>
+                    <tr class="adopt_trAll">
+                        <td class="firstTd">
+                            신청반려견이름
+                        </td>
+                        <td class="secondTd">
+                            <input type="text" style="width: 200px;">
+                            
+                        </td>
+                        
+                    </tr>
+                    <tr class="adopt_trAll">
+                        <td class="firstTd">
+                            신청이유
+                        </td>
+                        <td class="secondTd">
+                            <textarea style="width: 500px; height: 200px; resize:none;"placeholder="&#13;&#10;&#13;&#10;&#13;&#10;입양 신청 심사에 반영됩니다. &#13;&#10;자유롭게 작성하시되 새로운 가족에 대한 좋은 글만 남겨주세요"></textarea>
+                            </td>
+                    </tr>
+                </table>
+                <div style="float: right; margin-right: 150px;">
+                    <input type="button" value="약관 다시보기" id="reScroll">
+                    <input type="reset" value="입력 초기화">
+                    <input type="button" value="신청" id="adoptButton" onclick="onComplete()">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+
+<footer>
+    <div id="lastTitle">
+        <div style="text-align: left;margin-left:50px;color: rgb(230, 208, 180);">
+            이용약관 | <strong>개인정보 처리방침</strong>
+            <br>
+            상호명 : momentum_adopt_center - 수원지점
+        </div>
+        <div style="text-align:right;margin-right:20px;">
+            주소 : 경기도 수원시 팔달구 인계동 번지 신관 3층 208-5 KR 풍림빌딩 휴먼교육센터
+        <br>
+        ⓒCopyright 2024. MOMENTUM. 정유민. 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+        Call : 010-7741-0144. 
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    $(document).ready($("#adoptTextLine").hide());
+        
+    
+    function onFunction(){
+        if(inChk.checked==true){
+            $("#adoptTextLine").show();
+        }else{
+            $("#adoptTextLine").hide();
+        }
+    }
+    function onNameText(){
+        if($("#onName").val().length==0){
+            alert("이름을 지운 후 다시 입력하지 않았습니다, 확인해 주세요")
+        }
+    }
+    function onNumberText(){
+        if($("#onNumber").val().length==0){
+            alert("전화번호를 지운 후 다시 입력하지 않았습니다, 전화번호를 다시 확인하세요")
+        }
+    }
+    function onComplete(){
+        if($("#onName").val().length==0){
+            alert("이름은 필수 입력사항 입니다")
+            return
+        }
+        if($("#onNumber").val().length==0){
+            alert("전화번호는 필수 입력사항 입니다.")
+            return
+        }
+    }
+    
+    document.querySelector("#reScroll").addEventListener("click",()=>{
+        window.scrollTo({left:0,top:80})
+    })
+
+    document.querySelector("#firstMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/introCom.html"
+    })
+    document.querySelector("#secondMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/understand.html"
+    })
+    document.querySelector("#thirdMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/introDog.html"
+    })
+    document.querySelector("#fourthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/adopt.html"
+    })
+    document.querySelector("#fifthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/fav.html"
+    })
+    document.querySelector("#sixthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/fav_search.html"
+    })
+    document.querySelector("#homeS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/main.html"
+    })
+    document.querySelector("#inS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/log_insert.html"
+    })
+    document.querySelector("#logS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/log.html"
+    })
+    
+</script>
+
+</html>

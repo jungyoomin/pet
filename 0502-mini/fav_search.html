@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 정유민</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+   
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./mini-css/main.css">
+<link rel="stylesheet" href="./mini-css/footer.css">
+<link rel="stylesheet" href="./mini-css/header.css">
+<link rel="stylesheet" href="./mini-css/fav_search.css">
+<body>
+    
+    <header>
+        <div id="mainTitle">
+            <div id="titleIn">
+                <span id="homeS">home</span>
+                <span id="inS">| 회원가입 |</span>
+                <span id="logS"> 로그인 |</span>
+            </div>
+            <div id="titleText">
+                <h1>Momentum</h1> 
+                <nav style=" display: inline-block;">
+                    <a href="http://192.168.0.63:5500/0502-mini/main.html">
+                        <img src="./pick/whiteMomentum.png" width="150" height="150" id="headImg">
+                    </a>
+                </nav>
+                <h3>{ 유기견 입양센터 }</h3>
+            </div>
+        </div>
+        <div id="menu">
+            <table>
+                <tr>
+                    <td id="firstMenu">
+                        | 소개 |
+                    </td>
+                    <td id="secondMenu">
+                        애완동물이해하기 |
+                    </td>
+                    <td id="thirdMenu">
+                        반려견보기 |
+                    </td>
+                    <td id="fourthMenu">
+                        입양신청 |
+                    </td>
+                    <td id="fifthMenu">
+                        관심반려견 |
+                    </td>
+                    <td id="sixthMenu">
+                        반려견 검색 |
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <div id="textZone">
+        
+        <div id="favTable">
+            <div style="text-align: center; margin-top: 20px;"><strong>반려견 검색</strong></div>
+            <div style="margin-left: 30px;">
+                <br>
+                <input type="text" style="width: 300px;" placeholder="검색어를 입력하세요">
+                <input type="button" value="검색">
+                    검색옵션 :
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      나이
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">4개월 미만</a></li>
+                      <li><a class="dropdown-item" href="#">12개월 미만</a></li>
+                      <li><a class="dropdown-item" href="#">상관 없음</a></li>
+                    </ul>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        털 색
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">흰색</a></li>
+                        <li><a class="dropdown-item" href="#">검은색</a></li>
+                        <li><a class="dropdown-item" href="#">노란색</a></li>
+                        <li><a class="dropdown-item" href="#">상관 없음</a></li>
+                    </ul>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        개인기 여부
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">할 수 있음</a></li>
+                        <li><a class="dropdown-item" href="#">못해도 상관없음</a></li>
+                    </ul>
+                  
+                <br><br>
+            </div>
+        <div id="favLeft">
+            <table id="fav_leftTable"style="text-align: center;">
+                <tr>
+                    <td >
+                        <input type="checkbox" id="all_Select" oninput="allChk()">
+                    </td>
+                    <td class ="fav_one">
+                        사진
+                    </td>
+                    <td class ="fav_two">
+                        이름
+                    </td>
+                    <td class ="fav_three">
+                        나이
+                    </td>
+                    <td class ="fav_four">
+                        견종
+                    </td>
+                    
+                </tr>
+                <tr class="trclass">
+                    <td>
+                        <input type="checkbox" class="first_tab"> 
+                    </td>
+                    <td>
+                        <img src="./pick/littlePick/littlebbomi.jpg" >
+                    </td>
+                    <td>
+                        뽀미
+                    </td>
+                    <td>
+                        5개월
+                    </td>
+                    <td>
+                        포메라니안
+                    </td>
+                </tr>
+                <tr class="trclass">
+                    <td>
+                        <input type="checkbox" class="first_tab">
+                    </td>
+                    <td>
+                        <img src="./pick/littlePick/littlecookie.jpg" >
+                    </td>
+                    <td>
+                        쿠키
+                    </td>
+                    <td>
+                        4개월
+                    </td>
+                    <td>
+                        치와와
+                    </td>
+                </tr>
+                <tr class="trclass">
+                    <td>
+                        <input type="checkbox" class="first_tab">
+                    </td>
+                    <td>
+                        <img src="./pick/littlePick/littlesucky.jpg" >
+                    </td>
+                    <td>
+                        숙희
+                    </td>
+                    <td>
+                        12개월
+                    </td>
+                    <td>
+                        허스키
+                    </td>
+                </tr>
+                <tr class="trclass">
+                    <td>
+                        <input type="checkbox" class="first_tab">
+                    </td>
+                    <td>
+                        <img src="./pick/littlePick/littlemily.jpg" >
+                    </td>
+                    <td>
+                        마일리
+                    </td>
+                    <td>
+                        3개월
+                    </td>
+                    <td>
+                        말티즈
+                    </td>
+                </tr>
+                <tr class="trclass">
+                    <td>
+                        <input type="checkbox" class="first_tab">
+                    </td>
+                    <td>
+                        <img src="./pick/littlePick/littlejinjin.jpg" >
+                    </td>
+                    <td>
+                        진진
+                    </td>
+                    <td>
+                        5개월
+                    </td>
+                    <td>
+                        진돗개
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div id="favRight">
+            <table id = "fav_rightTable">
+                <tr style="border: 1px solid blue;">
+                    <td>
+                        <input type="checkbox" id="all_choice" oninput="alldel()">
+                    </td>
+                    <td class ="fav_one">
+                        사진
+                    </td>
+                    <td class="fav_two">
+                        이름
+                    </td>
+                    <td class="fav_three">
+                        나이
+                    </td>
+                    <td class="fav_four">
+                        견종
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class='favInB'>
+            <input type="button" value="관심리스트에 담기";  onclick="fav_on()" class="fav_button">
+            <input type="button" value="삭제" style="margin-left: 340px;" onclick="fav_del()" class="fav_button">
+            <br><br>
+            <input type="button" value="저장하기" style="width: 800px; margin-left: 100px; margin-bottom: 30px;" onclick="alert('관심리스트에 등록되었습니다.')" >
+        </div>
+        
+        </div>
+        
+    </div>
+</body>
+
+<footer>
+    <div id="lastTitle">
+        <div style="text-align: left;margin-left:50px;color: rgb(230, 208, 180);">
+            이용약관 | <strong>개인정보 처리방침</strong>
+            <br>
+            상호명 : momentum_adopt_center - 수원지점
+        </div>
+        <div style="text-align:right;margin-right:20px;">
+            주소 : 경기도 수원시 팔달구 인계동 번지 신관 3층 208-5 KR 풍림빌딩 휴먼교육센터
+        <br>
+        ⓒCopyright 2024. MOMENTUM. 정유민. 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+        Call : 010-7741-0144. 
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    function infav(){
+        for(delRow of $(".second_tab")){
+            if(delRow.checked==true){
+                delRow.closest("tr").remove()
+            }
+        }
+    }
+    function allChk(){
+        for(first_chk of $("#all_Select")){
+
+        }
+        if(first_chk.checked==true){
+            for(favRow of $(".first_tab")){
+                favRow.checked=true;
+            }
+        }else{
+            for(favRow of $(".first_tab")){
+                favRow.checked=false;
+            }
+        }
+    }
+    function alldel(){
+        for(first_del_chk of $("#all_choice")){
+
+        }
+        if(first_del_chk.checked==true){
+            for(delRow of $(".second_tab")){
+                delRow.checked=true;
+            }
+        }else{
+            for(delRow of $(".second_tab")){
+                delRow.checked=false;
+            }
+        }
+    }
+    function fav_del(){
+        for(delRow of $(".second_tab")){
+            if(delRow.checked==true){
+                delRow.closest("tr").remove()
+            }
+        }
+        for(first_del_chk of $("#all_choice")){
+
+        }
+        if(first_del_chk.checked==true){
+            first_del_chk.checked=false;
+        }
+    }
+    function fav_on(){
+        for(favRow of $(".first_tab")){
+            if(favRow.checked==true){
+                var table = document.querySelector("#fav_rightTable");
+                var newRow = table.insertRow();
+                newRow.className="trclass";
+                var newCell1 = newRow.insertCell(0);
+                var newCell2 = newRow.insertCell(1);
+                var newCell3 = newRow.insertCell(2);
+                var newCell4 = newRow.insertCell(3);
+                var newCell5 = newRow.insertCell(4);
+                newCell1.innerHTML="<input type='checkbox' class='second_tab'>";
+                newCell2.innerHTML= favRow.closest('td').nextElementSibling.innerHTML;
+                newCell3.innerHTML= favRow.closest('td').nextElementSibling.nextElementSibling.innerHTML;
+                newCell4.innerHTML= favRow.closest('td').nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
+                newCell5.innerHTML= favRow.closest('td').nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
+            }
+        }
+    }
+
+    document.querySelector("#firstMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/introCom.html"
+    })
+    document.querySelector("#secondMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/understand.html"
+    })
+    document.querySelector("#thirdMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/introDog.html"
+    })
+    document.querySelector("#fourthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/adopt.html"
+    })
+    document.querySelector("#fifthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/fav.html"
+    })
+    document.querySelector("#sixthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/fav_search.html"
+    })
+    document.querySelector("#homeS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/main.html"
+    })
+    document.querySelector("#inS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/log_insert.html"
+    })
+    document.querySelector("#logS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/log.html"
+    })
+    
+</script>
+
+</html>

@@ -1,0 +1,65 @@
+input:invalid {
+    border: 1px solid red;
+}
+input:valid {
+    border: 1px solid rgb(127, 128, 218);
+}
+.insertTable{
+    margin-left: 180px;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+    width: 500px;
+    
+}
+.insertTable tr, .insertTable td{
+    border: 1px solid black;
+}
+#insertText{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+    
+}
+#insertZone{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    
+}
+#inZone{
+    margin-top: 280px;
+    height:720px;
+    width: 1250px;
+    
+    display: inline-block;
+}
+.textInput{
+    width: 200px;
+    
+}
+.gendervalue{
+    width: 50px;
+}
+#image_in{
+    margin-left: 275px;
+}
+#file_in{
+    display:block;
+    margin-left: 200px;
+}
+.left_td{
+    width: 130px
+}
+.right_td{
+    width: 200px
+}
+#hide_on_text{
+    color: rgb(153, 8, 8);
+}
+#hide_on_bush{
+    color: rgb(153, 8, 8);
+}

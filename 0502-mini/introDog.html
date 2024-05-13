@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자 정유민</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+   
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./mini-css/main.css">
+<link rel="stylesheet" href="./mini-css/intro.css">
+<link rel="stylesheet" href="./mini-css/footer.css">
+<link rel="stylesheet" href="./mini-css/header.css">
+<body>
+    <!--시멘틱태그로 화면분할: 맨위 타이틀은 header, 맨 아래 사이트 정보, 이메일주소 등등정보는 footer-->
+    <!--각각의 html문서마다 css 한개씩 할당-->
+    <!--<div><p id="test">css 링크 테스트</p></div>  테스트 성공-->
+    <header style="position: static;">
+        <div id="mainTitle">
+            <div id="titleIn">
+                <span id="homeS">home</span>
+                <span id="inS">| 회원가입 |</span>
+                <span id="logS"> 로그인 |</span>
+            </div>
+            <div id="titleText">
+                <h1>Momentum</h1> 
+                
+                <nav style=" display: inline-block;">
+                    <a href="http://192.168.0.63:5500/0502-mini/main.html">
+                        <img src="./pick/whiteMomentum.png" width="150" height="150" id="headImg">
+                    </a>
+                </nav>
+                <h3>{ 유기견 입양센터 }</h3>
+                
+            </div>
+            
+        </div>
+        <div id="menu">
+            <table>
+                <tr>
+                    <td id="firstMenu">
+                        | 소개 |
+                    </td>
+                    <td id="secondMenu">
+                        애완동물이해하기 |
+                    </td>
+                    <td id="thirdMenu">
+                        반려견보기 |
+                    </td>
+                    <td id="fourthMenu">
+                        입양신청 |
+                    </td>
+                    <td id="fifthMenu">
+                        관심반려견 |
+                    </td>
+                    <td id="sixthMenu">
+                        반려견 검색 |
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    
+    <div id="dogZone">
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong class="card-name">뽀미</strong></h5>
+                          <p class="card-text">나이 : 생후 5개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+                                </svg> <br>
+                            견종 : 포메라니안<br>
+                            예방접종 여부 : 1차 완료 <br>
+                            마지막 접종 완료일 : 2024-05-02<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          
+                          <p class="card-text"><small class="text-body-secondary">똑똑해서 여러가지 개인기를 할줄 알아요</small></p>
+                        </div>
+                        <img src="./pick/bbomi.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>푸딩</strong></h5>
+                            <p class="card-text">나이 : 생후 12개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+                                </svg><br>
+                            견종 : 푸들<br>
+                            예방접종 여부 : 2차 완료 <br>
+                            마지막 접종 완료일 : 2024-05-02<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          <p class="card-text"><small class="text-body-secondary">항상 신나 있어요</small></p>
+                        </div>
+                        <img src="./pick/pooding.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>마일리</strong></h5>
+                          <p class="card-text">나이 : 생후 3개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+                                    </svg> <br>
+                            견종 : 말티즈<br>
+                            예방접종 여부 : 1차 완료 <br>
+                            마지막 접종 완료일 : 2024-04-30<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          <p class="card-text"><small class="text-body-secondary">달리기를 좋아해요</small></p>
+                        </div>
+                        <img src="./pick/maily.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>바닐라</strong></h5>
+                          <p class="card-text">나이 : 생후 20개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+                              </svg><br>
+                            견종 : 비숑<br>
+                            예방접종 여부 : 2차 완료 <br>
+                            마지막 접종 완료일 : 2024-04-28<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          <p class="card-text"><small class="text-body-secondary">솜사탕처럼 귀여워요</small></p>
+                        </div>
+                        <img src="./pick/vanilla.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>진진</strong></h5>
+                          <p class="card-text">나이 : 생후 5개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+                              </svg><br>
+                            견종 : 진돗개<br>
+                            예방접종 여부 : 미접종 <br>
+                            마지막 접종 완료일 : X<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          <p class="card-text"><small class="text-body-secondary">뽀쨕</small></p>
+                        </div>
+                        <img src="./pick/jinjin.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>민들레</strong></h5>
+                          <p class="card-text">나이 : 생후 6개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+                              </svg> <br>
+                            견종 : 골든 리트리버<br>
+                            예방접종 여부 : 1차 완료 <br>
+                            마지막 접종 완료일 : 2024-05-02<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          <p class="card-text"><small class="text-body-secondary">활짝 웃어요</small></p>
+                        </div>
+                        <img src="./pick/mindeulrea.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>숙희</strong></h5>
+                          <p class="card-text">나이 : 생후 12개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+                              </svg> <br>
+                            견종 : 허스키<br>
+                            예방접종 여부 : 1차 완료 <br>
+                            마지막 접종 완료일 : 2024-05-02<br>
+                            관심반려견 등록 <input type="checkbox" class="dogChk" oninput="dogFavChk(this)"><small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+                          <p class="card-text"><small class="text-body-secondary">추운곳에서 살다 와서 눈을 좋아해요</small></p>
+                        </div>
+                        <img src="./pick/sucky.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>쿠키</strong></h5>
+                          <p class="card-text">나이 : 생후 4개월 <br>
+                            성별 : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+                              </svg><br>
+                            견종 : 치와와<br>
+                            예방접종 여부 : 미접종 <br>
+                            마지막 접종 완료일 : X<br>
+                            관심반려견 등록 
+
+                            <input type="checkbox" class="dogChk" oninput="dogFavChk(this)">
+                            <small class="hiddenH" style="visibility: hidden;" >♥</small></p>
+
+                          <p class="card-text"><small class="text-body-secondary">발랄한 매력을 가졌어요</small></p>
+                        </div>
+                        <img src="./pick/cookie.jpg" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                등록되지 않음!
+                            </h5>
+                            <p class="card-text">
+                                입양가능한 반려견이 아직 등록되지 않았어요
+                            </p>
+                        </div>
+                        <img src="./pick/null_IMG.png" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                등록되지 않음!
+                            </h5>
+                            <p class="card-text">
+                                입양가능한 반려견이 아직 등록되지 않았어요
+                            </p>
+                        </div>
+                        <img src="./pick/null_IMG.png" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                등록되지 않음!
+                            </h5>
+                            <p class="card-text">
+                                입양가능한 반려견이 아직 등록되지 않았어요
+                            </p>
+                        </div>
+                        <img src="./pick/null_IMG.png" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                등록되지 않음!
+                            </h5>
+                            <p class="card-text">
+                                입양가능한 반려견이 아직 등록되지 않았어요
+                            </p>
+                        </div>
+                        <img src="./pick/null_IMG.png" class="card-img-bottom" alt="...">
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+
+
+        
+    </div>
+    
+</body>
+
+<footer>
+    <div id="lastTitle">
+        <div style="text-align: left;margin-left:50px;color: rgb(230, 208, 180);">
+            이용약관 | <strong>개인정보 처리방침</strong>
+            <br>
+            상호명 : momentum_adopt_center - 수원지점
+        </div>
+        <div style="text-align:right;margin-right:20px;">
+            주소 : 경기도 수원시 팔달구 인계동 번지 신관 3층 208-5 KR 풍림빌딩 휴먼교육센터
+        <br>
+        ⓒCopyright 2024. MOMENTUM. 정유민. 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg>
+        Call : 010-7741-0144. 
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    function dogFavChk(that){
+        this_Save=that
+        if(this_Save.checked==true){
+            this_Save.closest(".card-text").lastChild.style.visibility="visible";
+            alert(this_Save.parentElement.parentElement.firstElementChild.firstChild.textContent+"이(가) 관심반려견 목록에 등록 되었어요") 
+        }else{
+            this_Save.closest(".card-text").lastChild.style.visibility="hidden";
+            alert(this_Save.parentElement.parentElement.firstElementChild.firstChild.textContent+"이(가) 관심반려견 목록에서 취소 되었어요") 
+        }
+    }
+    
+
+    document.querySelector("#homeS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/main.html"
+    })
+    document.querySelector("#inS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/log_insert.html"
+    })
+    document.querySelector("#logS").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/log.html"
+    })
+    document.querySelector("#firstMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/introCom.html"
+    })
+    document.querySelector("#secondMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/understand.html"
+    })
+    document.querySelector("#thirdMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/introDog.html"
+    })
+    document.querySelector("#fourthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/adopt.html"
+    })
+    document.querySelector("#fifthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/fav.html"
+    })
+    document.querySelector("#sixthMenu").addEventListener("click",()=>{
+        window.location.href="http://192.168.0.63:5500/0502-mini/fav_search.html"
+    })
+    
+    
+</script>
+
+</html>

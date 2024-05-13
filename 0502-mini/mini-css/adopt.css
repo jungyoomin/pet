@@ -1,0 +1,78 @@
+#adoptZone{
+    margin-top: 280px;
+    height:800px;
+    width: 1250px;
+    display: inline-block;
+    
+    
+}
+#adoptDiv{
+    text-align: center;
+    width: 840px;
+    height: 750px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 2px solid black
+}
+#adoptLeft{
+    width: 150px;
+    
+    float: left;
+    
+}
+#adoptCenter{
+    width: 500px;
+    height: 1200px;
+    float: left;
+}
+#adoptRight{
+    width: 100px;
+    
+    float: left;
+    
+}
+
+#textCenter{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+    
+    border:2px solid black
+}
+#adoptForm{
+    height:600px;
+    width: 850px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#adoptTable{
+    height:490px;
+    width: 850px;
+    border:1px solid black
+}
+#adoptTextLine{
+    height:800px;
+    width: 1250px;
+    display: inline-block;
+   
+}
+
+.firstTd{
+    text-align: center;
+    width: 200px;
+    
+}
+.secondTd{
+    width: 400px;
+    
+}
+.adopt_trAll td{
+    border:1px solid black
+
+}

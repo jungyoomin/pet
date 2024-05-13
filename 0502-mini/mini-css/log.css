@@ -1,0 +1,21 @@
+#loginZone{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 700px;
+    height: 300px;
+    border: 2px solid black;
+}
+#logtable{
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.log_first_td{
+    width: 130px;
+}
+.log_second_td{
+    width: 350px;
+}
+#idText, #pwText{
+    width: 300px
+}

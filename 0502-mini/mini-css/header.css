@@ -1,0 +1,42 @@
+header{
+    width: 100%;
+    position:fixed;
+    top:0;
+    margin:0;
+}
+#mainTitle{
+    background-color: rgb(68, 68, 68);
+}
+
+
+#titleIn{
+    float: right;
+    color: white;
+    margin-right: 30px;
+}
+#titleText{
+    margin-left:50px;
+    color: white;
+    display: inline-block;
+}
+#lastTitle{
+    background-color: rgb(68, 68, 68);
+    color:white;
+    text-align: center;
+}
+#menu{
+    
+    background-color: rgb(102, 102, 102);
+    color:white;
+}
+table{
+   margin-left: auto; 
+   margin-right: auto;
+}
+h1{
+    display: inline-block;
+}
+#headImg{
+    margin-left: 300px; 
+   
+}

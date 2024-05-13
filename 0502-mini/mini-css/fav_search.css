@@ -1,0 +1,46 @@
+.trclass{
+    height: 100px;
+}
+#favTable{
+    margin-left: auto;
+    margin-right:auto; 
+    border: 1px solid black;
+    width: 1000px;
+}
+#favLeft{
+    margin-left: 10px;
+    display: inline-block; 
+    border: 1px solid black;
+}
+#favRight{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 530px;
+}
+.favInB{
+    display: inline-block;
+    width: 1000px;
+}
+.fav_one{
+    width: 100px;
+}
+.fav_two{
+    width: 80px;
+}
+.fav_three{
+    width: 80px;
+}
+.fav_four{
+    width: 200px;
+}
+#favTable tr, #favTable td{
+    border: 1px solid black
+}
+#fav_rightTable{
+    text-align: center;
+}
+.fav_button{
+    margin-left: 30px;
+}

@@ -1,0 +1,35 @@
+
+#one{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display:inline-block;
+    background-color: rgb(235, 209, 177)
+}
+#two{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    display:inline-block;
+}
+#three{
+    
+    width: 400px;
+    height: 596px;
+    border: 1px solid black;
+    float: right;
+    margin-right: 30px;
+}
+#four{
+    width: 810px;
+    height: 390px;
+    border: 1px solid black;
+}
+#five{
+    width: 1220px;
+    height: 190px;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    background-color: rgb(128, 123, 123);
+}
